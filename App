@@ -1,0 +1,15 @@
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <TopBar />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/about" component={AboutPage} />
+          <Route path="/contact" component={ContactPage} />
+        </Switch>
+      </div>
+    </Router>
+  );
+}
+
